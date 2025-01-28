@@ -2,16 +2,12 @@
 manufacturer: Mellanox
 model: SN2700
 slug: mellanox-sn2700
+comments: "[User's Manual](https://www.supermicro.com/manuals/superserver/1U/MNL-2649.pdf)<br />[Datasheet](https://network.nvidia.com/files/doc-2020/pb-sn2700.pdf)"
 u_height: 1
 is_full_depth: true
 console-ports:
   - name: con0
     type: rj-45
-power-ports:
-  - name: psu0
-    type: iec-60320-c14
-  - name: psu1
-    type: iec-60320-c14
 interfaces:
   - name: eth0
     type: 1000base-t
@@ -83,3 +79,10 @@ interfaces:
     type: 100gbase-x-qsfp28
   - name: swp32
     type: 100gbase-x-qsfp28
+module-bays:
+  - name: PSU1
+    position: '1'
+    description: Left power supply unit
+  - name: PSU2
+    position: '2'
+    description: Right power supply unit
